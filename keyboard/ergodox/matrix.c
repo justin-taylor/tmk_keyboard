@@ -185,11 +185,24 @@ uint8_t matrix_scan(void)
             ergodox_right_led_2_on();
             break;
         case 2:
+            ergodox_left_led_1_on();
+            ergodox_right_led_1_on();
+            ergodox_left_led_2_on();
+            ergodox_right_led_2_on();
+            ergodox_left_led_3_on();
+            ergodox_right_led_3_on();
             break;
         case 3:
             ergodox_left_led_1_on();
             ergodox_right_led_1_on();
             break;
+
+        case 4:
+            ergodox_left_led_3_on();
+            ergodox_right_led_3_on();
+            break;
+
+
         default: break;
     }
 

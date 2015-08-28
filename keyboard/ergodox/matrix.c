@@ -179,12 +179,16 @@ uint8_t matrix_scan(void)
     ergodox_right_led_3_off();
 
 
+    // led 1 yellow 
+    // led 2 green
+    // led 3 red
     switch (layer) {
-        case 1:
+        case 0: break;
+        case 1: // function and special keys
             ergodox_left_led_2_on();
             ergodox_right_led_2_on();
             break;
-        case 2:
+        case 2: // keyboard reset
             ergodox_left_led_1_on();
             ergodox_right_led_1_on();
             ergodox_left_led_2_on();
@@ -192,18 +196,23 @@ uint8_t matrix_scan(void)
             ergodox_left_led_3_on();
             ergodox_right_led_3_on();
             break;
-        case 3:
+        case 3: // numpad
             ergodox_left_led_1_on();
             ergodox_right_led_1_on();
             break;
 
-        case 4:
+        case 4: // mouse
             ergodox_left_led_3_on();
             ergodox_right_led_3_on();
             break;
 
 
-        default: break;
+        default:
+            ergodox_left_led_1_on();
+            ergodox_right_led_1_on();
+            ergodox_left_led_3_on();
+            ergodox_right_led_3_on();
+            break;
     }
 
     mcp23018_status = ergodox_left_leds_update();

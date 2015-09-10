@@ -25,7 +25,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(  // layer 1 : function and symbol keys
         // left hand
         GRV,F1,  F2,  F3,  F4,  F5,  F11,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+        TRNS,   1,   2,   3,   4,   5,TRNS,
         CAPS,MINS,EQL ,LBRC,RBRC,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,
@@ -33,10 +33,10 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                            TRNS,
                                  TRNS,TRNS,TRNS,
         // right hand
-             F12, F6,  F7,  F8,  F9,  F10, TRNS,
-             TRNS,TRNS,PGDN,PGUP,TRNS,TRNS,TRNS,
+             F12 ,  F6,  F7,  F8,  F9, F10,TRNS,
+             TRNS,   6,   7,   8,   9,   0,TRNS,
                   LEFT,DOWN,UP  ,RGHT,QUOT,TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,BSLS,TRNS,
+             TRNS,TRNS,PGDN,PGUP,TRNS,BSLS,TRNS,
                        TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,
         TRNS,
@@ -82,6 +82,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                        P0,  PDOT,SLSH,PENT,PENT,
         NO  ,NO  ,
         NO  ,
+
         NO  ,NO  ,NO  
     ),
 

@@ -6,7 +6,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB,    Q,    W,   E,   R,   T,   BTN1,
         LCTL,   A,    S,   D,   F,   G,
         LSFT,   Z,    X,   C,   V,   B,   BTN2,
-        LGUI, LEFT, DOWN,UP,RGHT,
+        LALT, LEFT, DOWN,UP,RGHT,
                                       LCTL,LALT,
                                              NO,
                                  FN5,FN6  ,  NO,
@@ -34,7 +34,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                  TRNS,TRNS,TRNS,
         // right hand
              F12, F6,  F7,  F8,  F9,  F10, TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+             TRNS,TRNS,PGDN,PGUP,TRNS,TRNS,TRNS,
                   LEFT,DOWN,UP  ,RGHT,QUOT,TRNS,
              TRNS,TRNS,TRNS,TRNS,TRNS,BSLS,TRNS,
                        TRNS,TRNS,TRNS,TRNS,TRNS,

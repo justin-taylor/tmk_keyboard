@@ -67,19 +67,19 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(  // layer 3: numpad
         // left hand
         NO  ,NO  ,  PSLS,PAST,PAST,PMNS,BSPC,
-        NO  ,NO  ,  P7,  P8,  P9,NO  ,NO  ,
-        NO  ,NO  ,  P4,  P5,  P6,NO  ,
-        NO  ,NO  ,  P1,  P2,  P3,PENT,NO  ,
-        NO  ,NO  ,  P0,PDOT,SLSH,
+        NO  ,NO  ,  7,  8,  9,NO  ,NO  ,
+        NO  ,NO  ,  4,  5,  6,NO  ,
+        NO  ,NO  ,  1,  2,  3,ENT,NO  ,
+        NO  ,NO  ,  0,DOT,SLSH,
                                       NO  ,NO  ,
                                            NO  ,
                                  PENT,NO  ,NO  ,
         // right hand
              FN3 ,NO,PSLS,PAST,PAST,PMNS,BSPC,
-             NO  ,NO,  P7,  P8,  P9,  PMNS,BSPC,
-                  NO,  P4,  P5,  P6,  PPLS,PENT,
-             NO  ,NO,  P1,  P2,  P3,  PPLS,PENT,
-                       P0,  PDOT,SLSH,PENT,PENT,
+             NO  ,NO,  7,  8,  9,  PMNS,BSPC,
+                  NO,  4,  5,  6,  PPLS,ENT,
+             NO  ,NO,  1,  2,  3,  PPLS,ENT,
+                       0,  DOT,SLSH,ENT,ENT,
         NO  ,NO  ,
         NO  ,
 
